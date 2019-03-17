@@ -3,8 +3,7 @@
 ### How do I get set up? ###
 
 * Clone the repo to your local machine.
-* Open assignment1 folder and run index.html
-* Open assignment2 folder and run index.html
+* Run index.html
 
 ### Contribution guidelines ###
 
