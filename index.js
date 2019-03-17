@@ -131,10 +131,9 @@ function generateCards(posterData) {
 
 var xhr = new XMLHttpRequest();
 // Adding proxy URL to avoid CORS policy error
-// var proxyurl = "https://cors-anywhere.herokuapp.com/";
+var proxyurl = "https://cors-anywhere.herokuapp.com/";
 
-// xhr.open('GET', proxyurl+'https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs', true);
-xhr.open('GET', 'https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs', true);
+xhr.open('GET', proxyurl+'https://in.bookmyshow.com/serv/getData?cmd=GETTRAILERS&mtype=cs', true);
 xhr.onload = function () {
 	// Begin accessing data here
 	var data = JSON.parse(this.response);
