@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Assignment 2</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link href="./index.css" rel="stylesheet">
+	</head>
+	<body>
+  	<div id="root">
+  		<div class="header">
+  			<div class="header-left">
+  				<button class="btn-now-showing">Now Showing</button>
+  				<button class="btn-coming-soon">Coming Soon</button>
+  			</div>
+  		</div>
+  		<div id="movie-trailer" class="movie-trailer hide">
+  			<div class="movie-video-container">
+  				<iframe id="single-trailer" src=""></iframe>
+  			</div>
+  			<div class="movie-details-container">
+  				<div class="cancel">
+  					<span onClick="closeTrailer()">X</span>
+  				</div>
+  				<div class="movie-details">
+  					<div class="movie-info">
+  						<span id="movie-name"></span>
+  						<span id="movie-lang"></span>
+  						<div class="genre-container">
+  							<span id="genre-tag1"></span>
+  							<span id="genre-tag2"></span>
+  							<span id="genre-tag3"></span>
+  						</div>
+  						<div>
+  							<div class="thumbs-ups">
+	  							<img src="./images/like_white.png">
+	  							<span>
+	  								<span id="likes"></span><br />
+	  								<span id="votes"></span>
+	  							</span>
+	  						</div>
+	  						<div class="release-date-container">
+	  							<img src="./images/calendar.png">
+	  							<span>
+	  								<span id="release-date"></span><br />
+	  								<span id="release-year"></span>
+	  							</span>
+	  						</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="./utils/moment.js"></script>
+	  <script src="./index.js"></script>
+	</body>
+</html>
