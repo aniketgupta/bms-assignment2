@@ -6,6 +6,7 @@
 		<title>Assignment 2</title>
 		<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="./index.css" rel="stylesheet">
 	</head>
 	<body>
@@ -22,33 +23,62 @@
   			</div>
   			<div class="movie-details-container">
   				<div class="cancel">
-  					<span onClick="closeTrailer()">X</span>
+  					<span onClick="closeTrailer()"><i class="fa fa-times"></i></span>
   				</div>
   				<div class="movie-details">
   					<div class="movie-info">
-  						<span id="movie-name"></span>
-  						<span id="movie-lang"></span>
+  						<span class="movie-name" id="movie-name"></span>
+  						<span class="movie-lang" id="movie-lang"></span>
   						<div class="genre-container">
-  							<span id="genre-tag1"></span>
-  							<span id="genre-tag2"></span>
-  							<span id="genre-tag3"></span>
+  							<span class="genre-tag" id="genre-tag1"></span>
+  							<span class="genre-tag1" id="genre-tag2"></span>
+  							<span class="genre-tag2" id="genre-tag3"></span>
   						</div>
   						<div>
   							<div class="thumbs-ups">
-	  							<img src="./images/like_white.png">
+	  							 <img src="./images/like_white.png">
 	  							<span>
-	  								<span id="likes"></span><br />
-	  								<span id="votes"></span>
+	  								<span class="likes" id="likes"></span><br />
+	  								<span class="votes" id="votes"></span>
 	  							</span>
 	  						</div>
 	  						<div class="release-date-container">
 	  							<img src="./images/calendar.png">
 	  							<span>
-	  								<span id="release-date"></span><br />
-	  								<span id="release-year"></span>
+	  								<span class="release-date" id="release-date"></span><br />
+	  								<span class="release-year" id="release-year"></span>
 	  							</span>
 	  						</div>
   						</div>
+              <div class="count-wrapper">
+                <div class="count-will">
+                  <div class="count-container">
+                    <span class="icon">
+                      <i class="fa fa-thumbs-up"></i>
+                    </span>
+                    <span class="text">WILL WATCH</span>
+                    <span class="text" id="wts-count"></span>                   
+                  </div>
+                </div>
+                <div class="count-maybe">
+                  <div class="count-container">
+                    <span class="icon">
+                       <i class="fa fa-question"></i>
+                    </span>
+                    <span class="text">MAYBE</span>
+                    <span class="text" id="maybe-count"></span>                    
+                  </div>
+                </div>
+                <div class="count-wont">
+                  <div class="count-container">
+                    <span class="icon">
+                      <i class="fa fa-thumbs-down"></i>
+                    </span>
+                    <span class="text">WON'T WATCH</span>
+                    <span class="text" id="dwts-count"></span>                   
+                  </div>
+                </div>
+              </div>
   					</div>
   				</div>
   			</div>

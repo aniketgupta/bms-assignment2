@@ -53,6 +53,9 @@ function showTrailer(params) {
   document.getElementById('votes').innerHTML = paramsData[7] + ' votes';
   document.getElementById('release-date').innerHTML = moment(paramsData[4], "MMMM D YYYY").format("D MMM");
   document.getElementById('release-year').innerHTML = paramsData[5];
+  document.getElementById('wts-count').innerHTML = '('+paramsData[7]+')';
+  document.getElementById('maybe-count').innerHTML = '('+paramsData[8]+')';
+  document.getElementById('dwts-count').innerHTML = '('+paramsData[9]+')';
 }
 
 /**
