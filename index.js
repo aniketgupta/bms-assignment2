@@ -10,6 +10,7 @@ app.appendChild(posterContainer);
  * @param {String} params The movie trailer data
  */
 function showTrailer(params) {
+  window.scrollTo(0, document.body.scrollHeight);
   document.getElementById('movie-trailer').classList.add("show");
   var paramsData = params.split(',');
   //0 posterData.TrailerURL, 
